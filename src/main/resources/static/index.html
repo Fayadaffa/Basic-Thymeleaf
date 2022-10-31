@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Input Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        fieldset{
+            border: 1px solid #000000;
+            display: inline-block;
+            font-size: 14px;
+            padding: 1em 2em;
+            box-shadow: 3px 3px 4px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <fieldset> 
+            <legend>Input Data</legend>
+             <form action="/login"  enctype="multipart/form-data" method="post"  style="text-align:center;">
+            Nama    : <input type="text" name="inputnama"/><br>
+            <br>
+            Tanggal : <input type="date" name="inputtgl"/><br>
+            <br>
+            Foto    : <input type="file" name="inputfoto" accept="image/jpeg,image/png"/><br> 
+            <br> 
+            <input type="submit" value="Input"/>
+         </fieldset>
+    </body>
+</html>
